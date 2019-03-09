@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Custom Toolbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <script src="../node_modules/redux/dist/redux.js"></script>
+    <script src="../dist/js/component/text-viewer/text-viewer.js"></script>
+    <script src="../dist/js/component/toolbar/toolbar.js"></script>
+    <script src="../dist/js/component/toolbar/toolbar-item.js"></script>
+    <script src="../dist/js/component/search-box/search-box.js"></script>
+    <script src="../dist/js/store/action/search-action.js"></script>
+    <script src="../dist/js/store/reducer/search-reducer.js"></script>
+    <script src="../dist/js/store/store.js"></script>
+    <script src="../dist/js/index.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height:100%;
+        }
+        body{
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <toolbar-component>
+        <toolbar-item>
+            <i slot="icon" class="fas fa-edit"></i>
+            <template>
+                <ul>
+                    <li data-menu-item-id="where">find 'where'</li>
+                    <li data-menu-item-id="you">find 'you'</li>
+                </ul>
+            </template>
+        </toolbar-item>
+        <toolbar-item>
+            <i slot="icon" class="fas fa-columns"></i>
+        </toolbar-item>
+        <toolbar-item disabled>
+            <i slot="icon" class="fas fa-exchange-alt"></i>
+        </toolbar-item>
+        <toolbar-item>
+                <i slot="icon" class="fas fa-chart-area"></i>
+        </toolbar-item>
+        <search-box value="" placeholder="highlight text"></search-box>
+    </toolbar-component>
+    <text-viewer>
+        <p>
+If you're visiting this page, you're likely here because you're searching for a random sentence. Sometimes a random
+word just isn't enough, and that is where the random sentence generator comes into play. By inputting the desired
+number, you can make a list of as many random sentences as you want or need. Producing random sentences can be helpful
+in a number of different ways.
+        </p><p>
+            For writers, a random sentence can help them get their creative juices flowing. Since the topic of the sentence is
+            completely unknown, it forces the writer to be creative when the sentence appears. There are a number of different ways
+            a writer can use the random sentence for creativity. The most common way to use the sentence is to begin a story.
+            Another option is to include it somewhere in the story. A much more difficult challenge is to use it to end a story. In
+            any of these cases, it forces the writer to think creatively since they have no idea what sentence will appear from the
+            tool.
+        </p><p>
+            
+            For those writers who have writers' block, this can be an excellent way to take a step to crumbling those walls. By
+            taking the writer away from the subject matter that is causing the block, a random sentence may allow them to see the
+            project they're working on in a different light and perspective. Sometimes all it takes is to get that first sentence
+            down to help break the block.
+        </p><p>
+            
+            It can also be successfully used as a daily exercise to get writers to begin writing. Being shown a random sentence and
+            using it to complete a paragraph each day can be an excellent way to begin any writing session.
+        </p><p>
+
+Random sentences can also spur creativity in other types of projects being done. If you are trying to come up with a
+new concept, a new idea or a new product, a random sentence may help you find unique qualities you may not have
+considered. Trying to incorporate the sentence into your project can help you look at it in different and unexpected
+ways than you would normally on your own.
+        </p>
+    </text-viewer>
+</body>
+</html>

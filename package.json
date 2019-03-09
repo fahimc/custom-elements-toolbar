@@ -1,0 +1,30 @@
+{
+  "name": "custom-elements-toolbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -c-1",
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "dev": "npx npm-run-all --parallel build serve watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahimc/custom-elements-toolbar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fahimc/custom-elements-toolbar/issues"
+  },
+  "homepage": "https://github.com/fahimc/custom-elements-toolbar#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "onchange": "^5.2.0",
+    "redux": "^4.0.1",
+  }
+}
